@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.toc.dlpush"
+        minSdkVersion 8
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/GetuiSdk2.4.1.0.jar')
+    compile files('libs/annotation.jar')
+    compile files('libs/fastjson-1.1.28.jar')
+    compile files('libs/MyAfinalTool.jar')
+    compile project(':loadtoast')
+    compile project(':library')
+    compile project(':MPChartLib') // remove this if you only imported the example project
+    compile project(':mylibrary')
+}

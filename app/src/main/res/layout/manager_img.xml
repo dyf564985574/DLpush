@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/manager_rela"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/electric_green">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域管理员详细"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/textView2" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back"
+            android:id="@+id/manager_back">
+            <RelativeLayout
+                android:id="@+id/submit_add_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ac1"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<View-->
+            <!--android:layout_width="1dip"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="#005555"-->
+            <!--android:layout_toRightOf="@+id/manager_back"-->
+            <!--android:layout_toEndOf="@+id/manager_back"></View>-->
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back"
+            android:id="@+id/notices_share"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:clickable="false"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/aev"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+<ImageView
+    android:id="@+id/manager_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>

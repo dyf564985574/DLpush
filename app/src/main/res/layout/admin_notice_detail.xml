@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/admin_notice_detail_screen"
+        android:layout_width="match_parent"
+        android:background="@color/electric_green"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="@string/caring_analy"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back"
+            android:id="@+id/notices_list_back">
+            <RelativeLayout
+                android:id="@+id/set_add_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ac1"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.toc.dlpush.util.CustomLinerLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <com.toc.dlpush.view.CustomListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/notices_detail_list01"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:footerDividersEnabled="false"
+            android:fadingEdge="none"
+            android:divider="@null"
+            android:listSelector="#00000000"></com.toc.dlpush.view.CustomListView>
+    </com.toc.dlpush.util.CustomLinerLayout>
+</LinearLayout>

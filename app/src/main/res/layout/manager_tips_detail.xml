@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tips_rela"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/electric_green">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细内容"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/textView2" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:id="@+id/tips_back">
+            <RelativeLayout
+                android:id="@+id/set_add_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_back"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ac1"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<View-->
+            <!--android:layout_width="1dip"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:background="#005555"-->
+            <!--android:layout_toRightOf="@+id/tips_back"-->
+            <!--android:layout_toEndOf="@+id/tips_back"></View>-->
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/manager_detail_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textSize="20dp"
+                            android:maxLines="3" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/manager_detail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#999999"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/manager_detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="#999999"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/manager_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@color/electric_green"></LinearLayout>
+                <TextView
+                    android:id="@+id/note01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:text="   客户经理回复："/>
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:text="           我是和和和和和和和和和和和和和和和和和和和和和好几道具大声地叫阿斯顿"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/detail_process"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="@string/deal_with"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_tip_one"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reply_main_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            >
+            <Button
+                android:id="@+id/new_reply_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33eeeeee"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@color/transparent"
+                android:paddingBottom="10dp" >
+                <LinearLayout
+                    android:id="@+id/manager_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:padding="10dp"
+                    android:background="@drawable/news_edittext_bg"
+                    android:gravity="left"
+                    android:textCursorDrawable="@null"
+                    android:hint="@string/dynamic_discuss_underscore"
+                    android:shadowColor="@color/black" >
+                </EditText>
+        </LinearLayout>
+                <Button
+                    android:id="@+id/publish_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/news_edittext_bg"
+                    android:text="@string/ok"
+                    android:textColor="@color/black"
+                    android:clickable="false"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/manager_back"
+                    android:layout_alignEnd="@+id/manager_back"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginEnd="60dp" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/news_edittext_bg"
+                    android:text="@string/cancle"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/manager_back"
+                    android:layout_alignStart="@+id/manager_back"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginStart="60dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>

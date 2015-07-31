@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/inter_color"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ring_circle"
+        android:id="@+id/relativeLayout">
+        <com.github.lzyzsd.circleprogress.CircleProgress
+            android:id="@+id/circle_progress"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            custom:circle_text_size="25dp"
+            custom:circle_finished_color="@color/circleprogress_finished_color"
+            custom:circle_unfinished_color="@color/circleprogress_unfinished_color"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            custom:circle_progress="0"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linearlayout01"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"></LinearLayout>
+  <RelativeLayout
+      android:id="@+id/relativeLayout01"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/relativeLayout"
+      android:layout_alignRight="@+id/relativeLayout"
+      android:layout_alignEnd="@+id/relativeLayout"
+      android:layout_marginRight="160dp"
+      android:layout_marginEnd="110dp"
+      android:layout_marginTop="110dp">
+      <com.github.lzyzsd.circleprogress.DonutProgress
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          custom:donut_progress="0"
+          custom:donut_unfinished_color="@color/white"
+          custom:donut_finished_color="@color/donutprogress01_finished_color"
+          custom:donut_finished_stroke_width="3dp"
+          custom:donut_unfinished_stroke_width="3dp"
+          custom:donut_background_circle_color="@color/donutprogress01_finished_color"
+          custom:donut_background_color="@color/donutprogress01_color"
+          custom:donut_inner_bottom_text_size="15dp"
+          custom:donut_text_color="@color/white"
+          custom:donut_inner_bottom_text_color="@color/white"
+          android:id="@+id/ring_progress01"
+           />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已处理"
+          android:layout_below="@+id/ring_progress01"
+          android:layout_centerHorizontal="true" />
+      </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relativeLayout01"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/linearlayout01"
+        android:layout_toEndOf="@+id/linearlayout01">
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            custom:donut_progress="0"
+            custom:donut_unfinished_color="@color/white"
+            custom:donut_finished_color="@color/donutprogress02_finished_color"
+            custom:donut_finished_stroke_width="3dp"
+            custom:donut_unfinished_stroke_width="3dp"
+            custom:donut_background_circle_color="@color/donutprogress02_finished_color"
+            custom:donut_background_color="@color/donutprogress02_color"
+            custom:donut_inner_bottom_text_size="15dp"
+            custom:donut_text_color="@color/white"
+            custom:donut_inner_bottom_text_color="@color/white"
+            android:id="@+id/ring_progress02"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未处理"
+            android:layout_below="@+id/ring_progress02"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="处理率"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+</RelativeLayout>

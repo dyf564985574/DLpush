@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="150" android:drawable="@mipmap/gpj"  />
+    <item android:duration="150" android:drawable="@mipmap/gpj1" />
+    <item android:duration="150" android:drawable="@mipmap/gpj2" />
+    <item android:duration="150" android:drawable="@mipmap/gpj3" />
+    <item android:duration="150" android:drawable="@mipmap/gpj4" />
+    <item android:duration="150" android:drawable="@mipmap/gpj5" />
+    <item android:duration="150" android:drawable="@mipmap/gpj6" />
+    <item android:duration="150" android:drawable="@mipmap/gpj7" />
+    <item android:duration="150" android:drawable="@mipmap/gpj8" />
+    <item android:duration="150" android:drawable="@mipmap/gpj9" />
+    <item android:duration="150" android:drawable="@mipmap/gpr3" />
+    <item android:duration="150" android:drawable="@mipmap/gpr4" />
+</animation-list>   

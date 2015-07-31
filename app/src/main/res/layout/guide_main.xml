@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/img"
+           android:layout_width="55dp"
+           android:layout_height="55dp"
+           android:src="@mipmap/calendar_yidu"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="39dp"
+           android:layout_marginStart="39dp" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划通知，已读"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notices_item_img"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_toEndOf="@+id/notices_item_img" />
+       </RelativeLayout>
+</LinearLayout>

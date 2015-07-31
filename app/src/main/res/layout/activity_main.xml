@@ -1,0 +1,124 @@
+<com.toc.dlpush.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/img_frame_background"
+    android:scrollbars="none"
+    zhy:rightPadding="100dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <include layout="@layout/layout_menu" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/electric_green">
+
+        <LinearLayout
+            android:id="@+id/buttom_bar_group"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout style="@style/ButtomBar" >
+
+                <Button
+                    android:id="@+id/buttom_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_tab"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="通知"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:textSize="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableTop="@drawable/btn_election"
+                    android:textColor="#ffffff"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/ButtomBar" >
+
+                <Button
+                    android:id="@+id/buttom_constact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_tab"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:textSize="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableTop="@drawable/btn_tip"
+                    android:text="贴士"
+                    android:textColor="#ffffff"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/ButtomBar" >
+
+                <Button
+                    android:id="@+id/buttom_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:background="@drawable/selector_tab"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="互动"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:textSize="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableTop="@drawable/btn_suggest"
+                    android:textColor="#ffffff"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/buttom_bar_group"
+            android:background="@color/devide_line" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/line" />
+         </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line_guide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@mipmap/notices_guide"></LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</com.toc.dlpush.SlidingMenu>

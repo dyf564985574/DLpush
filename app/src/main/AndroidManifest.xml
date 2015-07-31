@@ -1,0 +1,146 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.toc.dlpush"
+    android:versionCode="1" android:versionName="1.0.2" >
+    <uses-sdk android:maxSdkVersion="8" android:targetSdkVersion="19"></uses-sdk>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.toc.dlpush" /><!-- android 5.0必须配置 -->
+    <!-- <uses-permission android:name="getui.permission.GetuiService.第三方包名" />
+-->
+    <!--<uses-permission android:name="getui.permission.GetuiService.com.toc.dlpush" />-->
+    - <!--  自定义权限
+  -->
+    <permission android:name="getui.permission.GetuiService.com.toc.dlpush" android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/logo" android:theme="@style/AppTheme">
+        <activity
+            android:name="com.toc.dlpush.WelcomeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--    配置的第三方参数属性
+                    -->
+        <meta-data android:name="PUSH_APPID" android:value="5MmCUPAKks81ts8K4I1wK9" />
+        <meta-data android:name="PUSH_APPKEY" android:value="M9zgNTkLHeAQutF79oX8r1" />
+        <meta-data android:name="PUSH_APPSECRET" android:value="3yGgg3A56U69qwmxe7Gz02" />
+        <meta-data android:name="PUSH_GROUPID" android:value="" />
+        - <!--  配置第三方Receiver
+  -->
+        <receiver android:name="com.toc.dlpush.getui.PushDemoReceiver" android:exported="false">
+        <intent-filter>
+            <!--这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改-->
+        <action android:name="com.igexin.sdk.action.5MmCUPAKks81ts8K4I1wK9" />
+    </intent-filter>
+    </receiver>
+        - <!--  配置SDK核心服务
+  -->
+        <service android:name="com.igexin.sdk.PushService" android:process=":pushservice" android:exported="true" android:label="NotificationCenter" />
+        - <receiver android:name="com.igexin.sdk.PushReceiver">
+        - <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        <action android:name="android.intent.action.USER_PRESENT" />
+        <action android:name="com.igexin.sdk.action.refreshls" />
+    </intent-filter>
+    </receiver>
+        <service android:name="com.igexin.getuiext.service.GetuiExtService" android:process=":pushservice" />
+        - <!--  个推SDK配置结束
+  -->
+        <activity
+        android:name="com.toc.dlpush.notices.NoticesDetialActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name="com.toc.dlpush.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.toc.dlpush.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.toc.dlpush.ManagerActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.toc.dlpush.setting.AddActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.toc.dlpush.setting.ReviseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.toc.dlpush.caring.CaringDetail"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:label="@string/app_name"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.setting.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.tips.TipsDetail"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.tips.ProposeDetail"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.setting.AboutsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.tips.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.setting.ManagerImg"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.notices.ManagerNoticesDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.other.ReadPeopleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.other.UnReadPeopleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.other.UserDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.toc.dlpush.AdminActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".notices.AdminNoticesListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".notices.AdminNoticesDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".other.admin.AdminReadPeopleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".other.admin.AdminUnReadPeopleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

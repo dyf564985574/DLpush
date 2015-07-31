@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/setting_screen"
+        android:layout_width="match_parent"
+        android:background="@color/electric_green"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="@string/tab_setting"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/set_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/set_title_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="V1.0.0"
+                android:layout_below="@+id/set_image"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relat_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/set_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加联系人"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_add" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relat_revise"
+            android:layout_width="match_parent"
+            android:background="@drawable/set_item_background"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_revise" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relat_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/set_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检查更新"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_update" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relat_function"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/set_item_background"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="功能介绍"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_function" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relat_clear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/set_background"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_clear" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relat_logoff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/set_item_background"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出当前账号"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:textSize="16dp"
+                android:id="@+id/set_logoff" />
+
+
+        </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

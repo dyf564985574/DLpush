@@ -1,0 +1,133 @@
+<com.toc.dlpush.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/img_frame_background"
+    android:scrollbars="none"
+    zhy:rightPadding="100dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <include layout="@layout/layout_menu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/electric_green">
+
+                    <LinearLayout
+                        android:id="@+id/admin_bar_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout style="@style/ButtomBar" >
+
+                            <Button
+                                android:id="@+id/admin_news"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/selector_tab"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/notice_analy"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/admin_notices"
+                                android:textColor="#ffffff"
+                                android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/ButtomBar" >
+
+                            <Button
+                                android:id="@+id/admin_constact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/selector_tab"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:drawableTop="@drawable/admin_tips"
+                                android:text="@string/caring_analy"
+                                android:textColor="#ffffff"
+                                android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/ButtomBar" >
+
+                            <Button
+                                android:id="@+id/admin_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:button="@null"
+                                android:background="@drawable/selector_tab"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/tips_analy"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/admin_suggests"
+                                android:textColor="#ffffff"
+                                android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                        <RelativeLayout style="@style/ButtomBar" >
+
+                            <Button
+                                android:id="@+id/admin_stuff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:button="@null"
+                                android:background="@drawable/selector_tab"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/stuff_analy"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableTop="@drawable/admin_stuffs"
+                                android:textColor="#ffffff"
+                                android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_above="@id/admin_bar_group"
+                        android:background="@color/devide_line" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@id/line" />
+                </RelativeLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+</com.toc.dlpush.SlidingMenu>

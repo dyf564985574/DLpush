@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notices_details"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notices_rela"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/electric_green">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notices_detail"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/textView2" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back"
+            android:id="@+id/notices_back">
+            <RelativeLayout
+                android:id="@+id/set_add_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ac1"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/notices_share"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/look"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+    </RelativeLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webview"></WebView>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/manager_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/black_transparent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/manager_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/manager_drop"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/ground"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/manager_read"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            >
+                            <ImageView
+                                android:id="@+id/imageView01"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@mipmap/yidu"
+                                android:layout_centerVertical="true"
+                                />
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:text="已读列表"
+                                android:textColor="@color/black"
+                                android:layout_toRightOf="@+id/imageView01"
+                                />
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/comm_text_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView4">
+                                <TextView
+                                    android:id="@+id/read_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="10dp"
+                                    android:text="99"
+                                    android:textColor="@android:color/white" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/blackgary"></LinearLayout>
+                    <RelativeLayout
+                        android:id="@+id/manager_unread"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            >
+                            <ImageView
+                                android:id="@+id/imageView02"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@mipmap/weidu"
+                                android:layout_centerVertical="true"
+                                />
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="3dp"
+                                android:text="@string/unread"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imageView02"
+                                />
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/comm_text_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/textView5">
+                                <TextView
+                                    android:id="@+id/unread_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="10dp"
+                                    android:text="9"
+                                    android:textColor="@android:color/white" />
+                                </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

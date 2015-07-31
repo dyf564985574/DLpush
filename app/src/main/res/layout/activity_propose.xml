@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:paddingTop="20dp"
+            android:text="@string/propose_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/textID" />
+        <EditText
+            android:layout_below="@+id/textID"
+            android:id="@+id/feedback_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/suggext_edittext"
+            android:gravity="top"
+            android:hint="@string/feedback_content_hint"
+            android:paddingBottom="14.0dp"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="15.0dp"
+            android:paddingRight="15.0dp"
+            android:maxLines="150"
+            android:paddingTop="15.0dp"
+            android:singleLine="false"
+            android:maxLength="150"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff333333"
+            android:layout_marginTop="10dp"
+            android:textSize="15.0sp" />
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_tip_one"
+            android:padding="10.0dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="12.0sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/feedback_content_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+</LinearLayout>

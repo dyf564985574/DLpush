@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+    android:id="@+id/rl_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape_top_corner_no_bottom_line"
+    android:padding="8dp" >
+    <TextView
+    android:id="@+id/dialog_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:singleLine="true"
+    android:textStyle="bold"
+    android:text="东丽电力免责声明"
+    android:textSize="25sp" />
+    <TextView
+    android:id="@+id/dialog_msg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:maxHeight="300dp"
+    android:scrollbars="vertical"
+    android:layout_below="@+id/dialog_title"
+    android:text="   1.一切移动客户端用户在下载并浏览本软件时均被视为已经仔细阅读本条款并完全同意。凡以任何方式登陆本软件，或直接、间接使用本软件资料者，均被视为自愿接受本网站相关声明和用户服务协议的约束。\n
+   2.本软件只是东丽供电分公司的增值服务。\n
+   3.用户对使用自贸区用电软件自行承担风险，我们不做任何形式的保证, 因网络状况、通讯线路等任何技术原因而导致用户不能正常接到推送或短信所造成的损失，我们不承担任何法律责任。\n
+   4.自贸区用电软件尊重并保护所有用户的个人隐私权，不会窃取任何用户手机中的信息。\n
+   5.一切因使用自贸区用电软件而导致任何意外、疏忽、诽谤、版权或知识产权侵犯及其所造成的损失（包括在非官方站点下载自贸区用电而感染手机病毒），我们概不负责，亦不承担任何法律责任。\n
+   6.作者有关针对本软件的漏洞、错误、软件功能方面的修改和改善，将会发布到网站上，但不会逐个通知用户。\n
+   7.一切电力公司的准确通知以电力公司的热线95598为准"
+    android:textSize="18sp" />
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/dialog_msg"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal" >
+    <Button
+    android:id="@+id/dialog_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:background="@drawable/mydialog_btn"
+    android:text="取消"
+    android:textColor="@drawable/mydialog_font"
+     android:textSize="16dp"
+     />
+    <Button
+    android:id="@+id/dialog_ok"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="5dp"
+    android:layout_weight="1"
+    android:textSize="16dp"
+    android:textColor="@drawable/mydialog_font"
+    android:background="@drawable/mydialog_btn"
+    android:text="同意" />
+</LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>

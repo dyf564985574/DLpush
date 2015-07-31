@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/notices_background"
+    android:background="@drawable/notices_list">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/notices_img"
+            android:layout_width="65dp"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/notices_item_img"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/calendar_yidu"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notices_relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notices_img"
+            android:layout_toEndOf="@+id/notices_img">
+
+            <TextView
+                android:id="@+id/notices_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="理事会的试试嗯呐的"
+                android:layout_marginRight="60dp"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:textColor="@color/notices_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/notices_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90dp"
+                android:text="你是谁是谁你是你是谁是谁你是谁是谁"
+                android:textSize="11dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/notices_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@+id/notices_item_title"/>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentEnd="true"
+            >
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="18dp"
+                android:background="@mipmap/scale"
+                android:layout_marginRight="5dp"
+                android:id="@+id/imageView"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/notices_scale"
+                android:layout_toStartOf="@+id/notices_scale" />
+            <TextView
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textSize="10dp"
+                android:textColor="#FF2000"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:id="@+id/notices_scale" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/notices_item_ce"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ele_ce_weidu"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/dotter_line"></LinearLayout>
+
+</LinearLayout>

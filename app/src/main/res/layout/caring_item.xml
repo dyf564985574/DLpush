@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/notices_list">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/caring_relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+           >
+
+            <TextView
+                android:id="@+id/caring_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:layout_marginRight="110dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                android:text="12345"
+                android:textColor="@color/notices_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:id="@+id/caring_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="50dp"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/electric_green"
+                android:layout_alignParentRight="true"
+                android:text="19:25"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/caring_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:textSize="11dp"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:textColor="@color/notices_info"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:text="nishishui"
+                android:paddingBottom="3dp"
+                android:layout_below="@+id/caring_item_title"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ele_ce_weidu"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/dotter_line"></LinearLayout>
+
+</LinearLayout>

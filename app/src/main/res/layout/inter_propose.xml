@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.toc.dlpush.util.CustomLinerLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <com.toc.dlpush.view.CustomListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listView1"
+            android:background="@color/inter_color"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:divider="@null"
+            android:listSelector="#00000000">
+
+        </com.toc.dlpush.view.CustomListView>
+    </com.toc.dlpush.util.CustomLinerLayout>
+</LinearLayout>

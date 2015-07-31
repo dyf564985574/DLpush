@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/manager_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/user_screen"
+        android:layout_width="match_parent"
+        android:background="@color/electric_green"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:text="客户"
+            android:textColor="@color/white"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/plus"
+            android:onClick="toggleMenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="41dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/message_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blackgary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/news_edittext_bg"
+                android:clickable="false"
+                android:ems="10" >
+
+                <requestFocus />
+            </ImageView>
+  <RelativeLayout
+      android:layout_width="50dp"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:layout_centerVertical="true"
+
+          android:background="@mipmap/contact_search1"
+          />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/contact_search"
+          android:textColor="@color/textcolor_gray"
+          android:textSize="15sp"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true" />
+      </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/message_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent" />
+        </RelativeLayout>
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/message_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/sh"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.toc.dlpush.util.CustomLinerLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <com.toc.dlpush.view.CustomListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/manager_user_list"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:divider="@null"
+                android:listSelector="#00000000"></com.toc.dlpush.view.CustomListView>
+        </com.toc.dlpush.util.CustomLinerLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/message_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+
+            <LinearLayout
+                android:id="@+id/message_Ll501"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/ll_background" >
+
+                <EditText
+                    android:id="@+id/message_TexSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5.0"
+                    android:background="@drawable/news_edittext_bg"
+                    android:drawableLeft="@mipmap/contact_search1"
+                    android:drawablePadding="5dp"
+                    android:focusable="true"
+                    android:paddingLeft="5dp"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/contact_search"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    >
+                    <requestFocus />
+                    </EditText>
+
+
+                <Button
+                    android:id="@+id/message_BtnCancle"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/message_TexSearch"
+                    android:layout_weight="1.0"
+                    android:background="@color/transparent"
+                    android:text="@string/cancle"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/message_Three_list"
+                android:layout_width="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="0dip"
+                android:listSelector="@android:color/transparent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

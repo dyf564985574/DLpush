@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/notices_list">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/manager_relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/manager_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="20"
+                android:layout_marginRight="110dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15dp"
+                android:text="12345"
+                android:textColor="@color/notices_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"/>
+
+
+            <TextView
+                android:id="@+id/manager_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:textSize="11dp"
+                android:maxLines="2"
+                android:layout_centerVertical="true"
+                android:textColor="@color/notices_info"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:text="nishishui"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/manager_item_title"/>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/manager_phone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/contact_phone"
+            android:paddingRight="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+            android:id="@+id/manager_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/contact_message"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/dotter_line"></LinearLayout>
+
+</LinearLayout>
